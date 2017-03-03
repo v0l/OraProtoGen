@@ -135,7 +135,7 @@ namespace OraProtoGen
                     b.Append(string.Format("{0}{0}\t// {1}{0}\t{2} {3} {4} = {5};",
                         nl,
                         r.comments,
-                        (r.nullable == "Y" ? "required" : "optional"),
+                        (r.nullable == "Y" ?  "optional" : "required"),
                         ora2proto(r.data_type, r.data_length, r.data_precision),
                         fixName(r.column_name),
                         x
